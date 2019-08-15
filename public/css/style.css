@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-.body{
+body{
     font-family: sans-serif;
     padding: 10px 5%;
-    
+    background-image: url("https://miro.medium.com/max/1838/1*NaUmBti42n0FMMffyjTtBg.jpeg");
+    background-attachment: fixed;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .row .column{
     display:flex;
@@ -19,6 +23,7 @@
 .wrap{
     flex-wrap: wrap;
 }
+
 .header{
     margin-bottom: 10px;
 }
@@ -27,9 +32,17 @@
     width: 350px;
     margin-bottom:25px;
 }
+
 .event-header{
-    text-align: center;
     margin-bottom:10px;
+    margin-left: 5%;
+    margin-right: 25%;
+    width: 530px;
+    background: rgba(61, 60, 60, 0.5);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    text-align: center;
 }
 .event-form input, .event-form button{
     margin-bottom:5px;
@@ -37,10 +50,12 @@
 }
 
 .event{
-    background:green;
-    color: #fff;
-    padding:10px 15px 7px;
-    margin-right: 10px;
+    margin: 0 auto;
+    margin-right: 5%;
+    margin-left: 5%;
+    background: rgba(61, 60, 60, 0.5);
+    height: 250px;
+    
 }
 .event > *{
     font-weight: 300;
@@ -60,7 +75,7 @@
     border-bottom: 1px solid #707070;
     padding-bottom:3px;
 }
-.event h4.empty{
+.event p.empty{
     max-width: 120px;
     text-align:center;
     margin:0 auto;
@@ -80,4 +95,40 @@
 .event .netowrking p{
     font-size: .8rem;
 }
+.row .card-title{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
 
+.Welcome{
+    color: white; 
+    text-align: center; 
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(61, 60, 60, 0.5);
+    width: 400px; 
+    margin-left: 330px;
+    margin-right: 330px;
+}
+.Mission{ 
+    color: white; 
+    text-align: center; 
+    background: rgba(61, 60, 60, 0.5);
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    width: 100px;
+}
+#networkList{
+    background: rgba(61, 60, 60, 0.5) !important; 
+    
+}
+input{
+    color: white; 
+}
+.card .card-content {
+    margin-top: 0px;
+    padding-top: 0px;
+    border-radius: 0 0 2px 2px; 
+}
