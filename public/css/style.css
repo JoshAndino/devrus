@@ -1,0 +1,82 @@
+*{
+    margin: 9px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: sans-serif;
+    padding: 10px 5%;
+    
+}
+.row .column{
+    display:flex;
+}
+
+.column{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.header{
+    margin-bottom: 10px;
+}
+
+.event-form{
+    width: 350px;
+    margin-bottom:25px;
+}
+.event-header{
+    text-align: center;
+    margin-bottom:10px;
+}
+.event-form input, .event-form button{
+    margin-bottom:5px;
+    padding: 6px;
+}
+
+.event{
+    background:green;
+    color: #fff;
+    padding:10px 15px 7px;
+    margin-right: 10px;
+}
+.event > *{
+    font-weight: 300;
+}
+.event h2{
+    text-align:center;
+    font-weight:300;
+    margin-bottom: 5px
+}
+.event form input, .event form button{
+    padding: 4px;
+    margin-bottom: 2px;
+}
+.event h3{
+    text-align:center;
+    margin: 3px 0 5px;
+    border-bottom: 1px solid #707070;
+    padding-bottom:3px;
+}
+.event h4.empty{
+    max-width: 120px;
+    text-align:center;
+    margin:0 auto;
+    padding-top: 10px;
+}
+.event .networking{
+    padding: 3px;
+    background: #444;
+    text-align:center;
+    margin-bottom: 4px;
+}
+.event .networking h4{
+    font-weight: 400;
+    font-size:.95rem;
+    margin-bottom: 3px;
+}
+.event .netowrking p{
+    font-size: .8rem;
+}

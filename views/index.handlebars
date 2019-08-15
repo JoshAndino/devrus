@@ -1,0 +1,47 @@
+
+
+<h1 class="event-header">Events Listing</h1>
+
+<div class="row wrap">
+
+    {{!-- {{#each event}} --}}
+
+    <div class="event column">
+
+        <h2>{{name}}</h2>
+        
+
+        <form action="/devrus/models/networking" method="post" class="column">
+
+            <input type="text" name="name" placeholder="Event Name">
+
+            <input type="text" name="type" placeholder="type of event">
+            
+
+            <button>add event</button>
+
+        </form>
+
+    </div>
+
+    {{!-- {{/each}} --}}
+
+    <h3>Networking Listing</h3>
+
+    {{#each networking}}
+
+    <div clas="networking">
+
+        <h4>{{name}}</h4>
+
+        <p>{{type}}</p>
+
+    </div>
+
+    {{else}}
+
+    <h4 class="empty">No upcoming networking events</h4>
+
+    {{/each}}
+
+</div>
