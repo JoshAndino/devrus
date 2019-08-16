@@ -27,11 +27,15 @@ app.use(express.static(path.join(__dirname, "public")));
 //     console.log(event[0].networking);
 // })
 
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+require('./routes/apiRoutes')(app);
+require('./routes/htmlRoutes')(app);
 
 //routes
 app.get("/", async (req, res) => {
@@ -69,7 +73,8 @@ app.post("/devrus/models/networking/", (req, res) => {
 //   })
 // })
 
-db.sequelize.sync({ force: true }).then(function() {
+// db.sequelize.sync({ force: true }).then(function() {
+db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
