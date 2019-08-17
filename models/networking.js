@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     type: DataTypes.STRING
   }, {});
   networking.associate = function(models) {
-    // netowkring events belong to events
+    // netwokring events belong to events
     networking.belongsTo(models.event)
   };
   return networking;
