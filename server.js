@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const app = express();
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 // const event = require('./models/event');
 // const networking = require('./models/networking');
